@@ -1,0 +1,19 @@
+use JSON;
+
+sub get_database {
+	my $ffdb;
+	my ($fname) = @_;
+	open(IN, $fname);
+	flock(IN, 1);
+	# read in whole file
+	my $tmp = $/;
+	undef $/;
+	my $l = <IN>;
+	eval $l;
+	close(IN);
+	$/ = $tmp;
+	return $ffdb;
+}
+
+my $fname = pop(@ARGV);
+print $fname;
