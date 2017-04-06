@@ -1,5 +1,0 @@
-<Files ~ "^p_">
-  AuthName "Users zone"
-  AuthType Basic
-  AuthUserFile /pub/home/your_login/.htpasswd
-</Files>
