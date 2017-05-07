@@ -15,5 +15,6 @@
 .DS_Store
 adam2012.jpg
 logs
+node_modules
 pbrawr.backup
 pygooglechart-*
