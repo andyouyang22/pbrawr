@@ -2,15 +2,23 @@
   "name": "pbrawr",
   "version": "1.0.0",
   "description": "Website of Polar Bears Ultimate",
-  "main": "src/server/bin/www",
+  "main": "src/bin/www",
   "scripts": {
+    "start": "passenger start --app-type node --startup-file src/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrew Ouyang",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "serve-favicon": "~2.4.2"
   },
   "devDependencies": {}
 }

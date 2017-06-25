@@ -16,5 +16,7 @@
 adam2012.jpg
 logs
 node_modules
+npm-*
+passenger.*
 pbrawr.backup
 pygooglechart-*
